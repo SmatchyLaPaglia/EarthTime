@@ -11,7 +11,7 @@ import SwiftUI
 struct EarthTimeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CompanionContentView()
         }
     }
 }

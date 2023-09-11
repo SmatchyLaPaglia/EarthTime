@@ -22,6 +22,13 @@
 		2D5185292AACE97B00521F20 /* EarthTime_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5185282AACE97B00521F20 /* EarthTime_Watch_AppTests.swift */; };
 		2D5185332AACE97B00521F20 /* EarthTime_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5185322AACE97B00521F20 /* EarthTime_Watch_AppUITests.swift */; };
 		2D5185352AACE97B00521F20 /* EarthTime_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5185342AACE97B00521F20 /* EarthTime_Watch_AppUITestsLaunchTests.swift */; };
+		2D51854E2AAE497F00521F20 /* CoreLocationUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D51854C2AAE497E00521F20 /* CoreLocationUI.framework */; };
+		2D51854F2AAE497F00521F20 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D51854D2AAE497F00521F20 /* CoreLocation.framework */; };
+		2D5185522AAE4B1D00521F20 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5185502AAE49E800521F20 /* LocationManager.swift */; };
+		2D5185542AAE4B2200521F20 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5185532AAE4B2200521F20 /* LocationManager.swift */; };
+		2D5185562AAF467700521F20 /* Attributions.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2D5185552AAF467700521F20 /* Attributions.rtf */; };
+		2D51855B2AAF5C5200521F20 /* SizeCalculator Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51855A2AAF5C5200521F20 /* SizeCalculator Extension.swift */; };
+		2D51855C2AAF5C5200521F20 /* SizeCalculator Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51855A2AAF5C5200521F20 /* SizeCalculator Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +104,12 @@
 		2D51852E2AACE97B00521F20 /* EarthTime Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EarthTime Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5185322AACE97B00521F20 /* EarthTime_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthTime_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		2D5185342AACE97B00521F20 /* EarthTime_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthTime_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D51854C2AAE497E00521F20 /* CoreLocationUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocationUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/CoreLocationUI.framework; sourceTree = DEVELOPER_DIR; };
+		2D51854D2AAE497F00521F20 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		2D5185502AAE49E800521F20 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2D5185532AAE4B2200521F20 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2D5185552AAF467700521F20 /* Attributions.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Attributions.rtf; sourceTree = "<group>"; };
+		2D51855A2AAF5C5200521F20 /* SizeCalculator Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SizeCalculator Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D51854F2AAE497F00521F20 /* CoreLocation.framework in Frameworks */,
+				2D51854E2AAE497F00521F20 /* CoreLocationUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +163,8 @@
 		2D5184E32AACE97800521F20 = {
 			isa = PBXGroup;
 			children = (
+				2D51855A2AAF5C5200521F20 /* SizeCalculator Extension.swift */,
+				2D5185552AAF467700521F20 /* Attributions.rtf */,
 				2D5184EE2AACE97800521F20 /* EarthTime */,
 				2D5184FF2AACE97A00521F20 /* EarthTimeTests */,
 				2D5185092AACE97A00521F20 /* EarthTimeUITests */,
@@ -155,6 +172,7 @@
 				2D5185272AACE97B00521F20 /* EarthTime Watch AppTests */,
 				2D5185312AACE97B00521F20 /* EarthTime Watch AppUITests */,
 				2D5184ED2AACE97800521F20 /* Products */,
+				2D51854B2AAE497E00521F20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +194,7 @@
 			children = (
 				2D5184EF2AACE97800521F20 /* EarthTimeApp.swift */,
 				2D5184F12AACE97800521F20 /* ContentView.swift */,
+				2D5185502AAE49E800521F20 /* LocationManager.swift */,
 				2D5184F32AACE97A00521F20 /* Assets.xcassets */,
 				2D5184F52AACE97A00521F20 /* Preview Content */,
 			);
@@ -212,6 +231,7 @@
 			children = (
 				2D5185172AACE97A00521F20 /* EarthTimeApp.swift */,
 				2D5185192AACE97A00521F20 /* ContentView.swift */,
+				2D5185532AAE4B2200521F20 /* LocationManager.swift */,
 				2D51851B2AACE97B00521F20 /* Assets.xcassets */,
 				2D51851D2AACE97B00521F20 /* Preview Content */,
 			);
@@ -241,6 +261,15 @@
 				2D5185342AACE97B00521F20 /* EarthTime_Watch_AppUITestsLaunchTests.swift */,
 			);
 			path = "EarthTime Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		2D51854B2AAE497E00521F20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D51854D2AAE497F00521F20 /* CoreLocation.framework */,
+				2D51854C2AAE497E00521F20 /* CoreLocationUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5185562AAF467700521F20 /* Attributions.rtf in Resources */,
 				2D5184F72AACE97A00521F20 /* Preview Assets.xcassets in Resources */,
 				2D5184F42AACE97A00521F20 /* Assets.xcassets in Resources */,
 			);
@@ -467,6 +497,8 @@
 			files = (
 				2D5184F22AACE97800521F20 /* ContentView.swift in Sources */,
 				2D5184F02AACE97800521F20 /* EarthTimeApp.swift in Sources */,
+				2D5185522AAE4B1D00521F20 /* LocationManager.swift in Sources */,
+				2D51855B2AAF5C5200521F20 /* SizeCalculator Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +525,8 @@
 			files = (
 				2D51851A2AACE97A00521F20 /* ContentView.swift in Sources */,
 				2D5185182AACE97A00521F20 /* EarthTimeApp.swift in Sources */,
+				2D5185542AAE4B2200521F20 /* LocationManager.swift in Sources */,
+				2D51855C2AAF5C5200521F20 /* SizeCalculator Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +761,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = EarthTime;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -760,6 +796,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = EarthTime;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

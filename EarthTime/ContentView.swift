@@ -5,22 +5,31 @@
 //  Created by Jesse Wonder Clark on 9/9/23.
 //
 
+import CoreLocation
 import SwiftUI
 
-struct ContentView: View {
+struct CompanionContentView: View {
+    @ObservedObject var locationManager = LocationManager()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            if let location = locationManager.currentLocation {
+                Text("Latitude: \(location.coordinate.latitude)")
+                Text("Longitude: \(location.coordinate.longitude)")
+                Image("earthFromNorthPole")
+                    .resizable()
+                    .scaledToFit()
+            } else {
+                Text("Fetching location...")
+            }
         }
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+
+struct CompanionContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CompanionContentView()
     }
 }
